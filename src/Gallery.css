@@ -1,0 +1,155 @@
+.App {
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom:5%;
+}
+
+
+
+
+
+
+
+
+/* For Gallery.js */
+
+.Images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ }
+.singleImage {
+  width: 40%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  transition:0.6s;
+  box-shadow: 5px 8px 9px -5px #159ea5;
+}
+ 
+.singleImage:hover {
+  transition: 0.2s;
+  opacity:0.5;
+  cursor:pointer;
+}
+ 
+
+/* For Popup.js .. */
+
+.popupParent {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgb(8 27 41 / 85%);
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  -webkit-animation: fade-in 0.5s ease-in both;
+  animation: fade-in 0.5s ease-in both;
+  overflow: hidden;
+  box-sizing: content-box;
+  z-index: 999;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popupImgWrapper {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  margin: auto;  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+  box-sizing: content-box;
+}
+img.popupImgLarge {
+  width: 100%;
+}
+/* If your image is longer than the height of the screen, you can comment this out to have a scrollbar. */
+  .popupImgWrapper::-webkit-scrollbar {
+  display: none;
+  } 
+
+.closePopupBTN {
+  right: 2%;
+  top: 1%;
+  font-size: 22px;
+  position: fixed;
+  background: white;
+  border: none;
+  border-radius: 9px;
+  padding: 5px 10px;
+}
+.closePopupBTN:hover {
+  cursor:pointer;
+  background:#e0e0e0
+}
+
+
+
+
+/* Media queries...  */
+
+@media screen and (max-width:850px) {
+  img.popupImgLarge {
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  .popupImgWrapper {
+    left: 5%;
+    right: 5%;
+  }
+  .Images {
+    justify-content: space-between;
+  }
+  .singleImage {
+    margin-right:25px;
+  }
+}
+@media screen and (max-width:768px) {
+  .singleImage {
+    width: 300px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  img.popupImgLarge {
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .singleImage {
+    margin-right:0;
+    width:100%;
+    height:180px;
+  }
+}
