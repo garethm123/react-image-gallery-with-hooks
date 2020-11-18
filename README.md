@@ -4,7 +4,7 @@ Just a simple gallery that stores images as an array in state.
 
 When a small image is clicked, it will display larger as an overlay with a small css animation-in.
 
-Test it out - <a href="https://responsive-react-gallery.netlify.app/">Demo</a>
+Test it out - <a href="https://responsive-react-gallery.netlify.app/" target="_blank">Demo</a>
 
 ## Requirements/dependancies
 
