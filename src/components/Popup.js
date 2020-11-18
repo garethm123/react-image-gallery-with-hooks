@@ -14,7 +14,11 @@ export default class Popup extends Component {
           >
             Close [x]
           </button>
-          <img src={this.props.popupImageURL} className="popupImgLarge" />
+          <img 
+            src={this.props.popupImageURL} 
+            className="popupImgLarge" 
+            alt="A dog"
+          />
         </div>
       </div>
     )
