@@ -46,6 +46,7 @@ render() {
         src={url}
         key={index}
         onClick={ () => this.setPopup(url) }
+        alt="a dog"
       />
     )
   })

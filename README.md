@@ -4,6 +4,8 @@ Just a simple gallery that stores images as an array in state.
 
 When a small image is clicked, it will display larger as an overlay with a small css animation-in.
 
+Demo - 
+
 ## Requirements/dependancies
 
 Just React and React-DOM.. no other dependancies required for this to work. It also works with Next.js (I'm using it on one of my own projects)
@@ -18,7 +20,7 @@ This is a working example built with CRA, however you can simply take the two co
 
 ### Two simple components:
 
-- Gallery.js (the main component you need to import as <Gallery /> wherever you want the gallery)
+- Gallery.js (the main component you need to import as \<\Gallery /> wherever you want the gallery)
 - Popup.js (the component which displays the larger images)
 
 ### CSS 
