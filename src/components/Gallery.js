@@ -23,7 +23,6 @@ export default function Gallery() {
     setPopupImgURL(url)
   }
 
-
   // Create and map through the image array from array of URLs stored in state.
   const images = imageURLArray.map((url, index) => {
     console.log(url)

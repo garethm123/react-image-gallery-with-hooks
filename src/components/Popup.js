@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 // The structure for the popup
 // Pass in the closePopup and popupImageURL props from the parent component
 
