@@ -25,7 +25,6 @@ export default function Gallery() {
 
   // Create and map through the image array from array of URLs stored in state.
   const images = imageURLArray.map((url, index) => {
-    console.log(url)
     return (
       <img
         className="singleImage"
