@@ -1,6 +1,8 @@
 # What is this React Image Gallery Component?
 
-Just a simple gallery that stores images as an array in state.
+This does exactly the same thing as my other image gallery, **however** this one uses React hooks and function components rather than class based components. No more need for 'this.props'... woohoo!
+
+This is a simple gallery that stores images as an array in state with React hooks.
 
 When a small image is clicked, it will display larger as an overlay with a small css animation-in.
 

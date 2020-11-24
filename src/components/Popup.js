@@ -1,26 +1,25 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 
-// The structure for the popup. Need to pass in the values for onClick and img src from state in Gallery.js
+// The structure for the popup
+// Pass in the closePopup and popupImageURL props from the parent component
 
-export default class Popup extends Component {
-  render() {
-    return (
-      <div className="popupParent">
-        <div className="popupImgWrapper">
-          <button 
-            className="closePopupBTN"
-            onClick={this.props.closePopup}
-          >
-            Close [x]
-          </button>
-          <img 
-            src={this.props.popupImageURL} 
-            className="popupImgLarge" 
-            alt="A dog"
-          />
-        </div>
-      </div>
-    )
-  }
+export default function Popup({closePopup, popupImageURL}) {
+  return (
+    <div className="popupParent">
+    <div className="popupImgWrapper">
+      <button 
+        className="closePopupBTN"
+        onClick={closePopup}
+      >
+        Close [x]
+      </button>
+      <img 
+        src={popupImageURL} 
+        className="popupImgLarge" 
+        alt="A dog"
+      />
+    </div>
+  </div>
+  )
 }
